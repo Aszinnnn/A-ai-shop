@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-@media (max-width: 768px) {
+
 header {
     position: relative;
 
@@ -55,8 +55,8 @@ header::before {
     font-size: 18px;
     color: #fff;
 }
-}
-@media (max-width: 768px) {
+
+
 .navbar {
     position: absolute;
     top: 0;
@@ -102,7 +102,7 @@ header::before {
 .logo:hover img {
     transform: scale(1.2);
 }
-}
+
 .hero {
     position: relative;
 }
@@ -422,4 +422,52 @@ header::before {
 #cardapio h2 {
     font-size: 30px;
     text-align: center;
+}
+
+    @media screen and (max-width: 768px) {
+
+        body {
+
+            background-color: #f0f0f0;
+        }
+
+        header {
+            height: 60vh;
+        }
+
+        .navbar {
+            height: 50px;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .navbar ul {
+            margin-left: 0;
+        }
+
+        .card {
+            margin: 0 5px 10px;
+        }
+
+        .card img {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .header-content h1 {
+            font-size: 40px;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+
+        #cardapio h2 {
+            font-size: 24px;
+        }
+    }
+
+    
 }
